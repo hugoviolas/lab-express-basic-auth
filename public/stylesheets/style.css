@@ -1,10 +1,45 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+  background-color: rgb(162, 210, 255);
+  font-family: "Teko", sans-serif;
+  color: #023e8a;
 }
 
 a {
   color: #00b7ff;
+  text-decoration: none;
+}
+
+.auth {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 5rem;
+  border: 3px solid rgb(255, 200, 221);
+  border-radius: 5px;
+  background-color: rgb(255, 175, 204);
+  font-size: 2rem;
+  margin: 2rem;
+}
+.link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar p {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .error {
@@ -13,4 +48,37 @@ a {
 
 .cat img {
   width: 30%;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form form {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form button {
+  margin-left: 1rem;
+  background-color: rgb(255, 175, 204);
+  border-radius: 5px;
+  border: none;
+  height: 100%;
+}
+
+.form button:hover {
+  cursor: pointer;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

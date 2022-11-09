@@ -1,20 +1,28 @@
-<h2>Signup</h2>
-
-<form action="/auth/signup" method="post">
-  <div>
-    <label for="username">Username: </label>
-    <input type="text" name="username" id="username" />
-  </div>
-  <div>
-    <label for="password">Password: </label>
-    <input type="password" name="password" id="password" />
-  </div>
-
+<div class="form">
+  <h2>Signup</h2>
+  <form action="/auth/signup" method="post">
+    <div class="elem">
+      <label for="username">Username: </label>
+      <input type="text" name="username" id="username" />
+    </div>
+    <div class="elem">
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" />
+    </div>
+    <div>
+      <button>Signup</button>
+    </div>
+  </form>
   {{#if errorMessage}}
     <p class="error">{{errorMessage}}</p>
   {{/if}}
+</div>
 
-  <button>Signup</button>
-</form>
-<p>Already registered ? <a href="/auth/login">Login !</a></p>
-<a href="/">Home</a>
+<div class="form-footer">
+  <div>
+    <p>Already registered ? <a href="/auth/login">Login !</a></p>
+  </div>
+  <div class="link">
+    <a href="/">Home</a>
+  </div>
+</div>

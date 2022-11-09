@@ -1,18 +1,28 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
-{{!-- {{#if isLoggedIn}} --}}
-<a href="/main">Cat picture</a>
-<a href="/private">Funny Gif</a>
+<div class="pages">
+  <div class="auth">
+    <div class="link">
+      <a href="/main">Cat picture</a>
+    </div>
+    <div class="link">
+      <a href="/private">Funny Gif</a>
+    </div>
+  </div>
+</div>
 
-{{!-- {{else}} --}}
-<a href="/auth/signup">Signup</a>
 {{#unless isLoggedIn}}
-  <a href="/auth/login">Login</a>
+  <div class="auth">
+    <div class="link">
+      <a href="/auth/signup">Signup</a>
+    </div>
+    <div class="link">
+      <a href="/auth/login">Login</a>
+    </div>
+  </div>
 {{/unless}}
 
-{{!-- {{/if}} --}}
-
-{{#if isLoggedIn}}
+{{!-- {{#if isLoggedIn}}
   <a href="/auth/logout">Logout</a>
-{{/if}}
+{{/if}} --}}

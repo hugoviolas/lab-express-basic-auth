@@ -7,8 +7,8 @@ const {
 /* GET home page */
 
 router.use("/auth", require("./auth.route"));
-
-router.get("/", exposeUserToView, (req, res, next) => {
+router.use(exposeUserToView);
+router.get("/", (req, res, next) => {
   res.render("index");
 });
 
